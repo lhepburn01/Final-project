@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Film House</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="homeStyles.css">
+
+</head>
+<img id="logo" src="filmHouseLogo.png" >
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col"> <a href="home.html"><h3>Home</h3> </a> </div>
+				<div class="col"> <a href="catalogue.html"><h3>Catalogue</h3></a></div>
+				<div class="col"> <h3>Notes</h3> </div>
+			</div>
+		</div>
+		
+		<hr>
+	<body onload="displayMovies()">
+
+		<input id="title" type="text" placeholder="Enter Movie Title"/>
+		<input id="director" type="text" placeholder="Enter Director" />
+		<input id="year" type="number" placeholder="Release Year" />
+		<input id="status" type="text" placeholder="Enter Shown Status" />
+		<input type="button" value="Add Movie" onclick="addMovie()" />
+				
+		<div id="display"></div>
+		
+		<!-- ------------------------------------------------- -->
+		<hr />		
+			
+		
+		<script src="script.js"></script>
+	</body>
+</html>
